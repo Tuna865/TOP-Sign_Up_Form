@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Porsche;
+    src: url('911porscha/911porschav3.ttf');
+}
+
+#porsche-font{
+    font-family: Porsche;
+    color: red;
+}
+
+#left-side{
+    background: url('Porsche\ 930\ Graphic.jpeg');
+    border: black 2px solid;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
