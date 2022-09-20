@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>TOP Sign Up Form</title>
@@ -11,45 +14,52 @@
 <body>
     <main>
         <div id="left-side">
-            <h1 id="porsche-font">Porsche</h1>
-
+            <div>
+                <h1 id="porsche-logo">Porsche</h1>
+                <img id="background-930-image" src="Porsche-930-Graphic.jpeg" alt="930 Graphic">
+            </div>
         </div>
         <div id="right-side">
-            <h1>The Widowmaker</h1>
             <div id="intro-quote">
+            <h1>Der Witwenmacher</h1>
                 <p>
                     The 930 generation of Porsche's flagship sportscar is often 
-                    referred to as The Widowmaker, due to how difficult it can be to drive.
+                    referred to as "The Widowmaker," due to how difficult it can be to drive. Want to
+                    learn more about this collector's car? Enter your information below!
                 </p>
             </div>
             <div id="forms-section">
                 <!-- no action or method for this form tag since it has no backend -->
                 <!-- same goes for name on inputs -->
                 <form>
-                    <fieldset>
-                        <label for="first-name">First Name</label>
+                    <div>
+                        <label for="first-name">First Name:</label>
                         <input type="text" id="first-name">
                         
-                        <label for="last-name">Last Name</label>
+                        <label for="last-name">Last Name:</label>
                         <input type="text" id="last-name">
-                    </fieldset>
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-
-                    <label for="phone">Phone</label>
-                    <input type="number" id="phone">
-                    
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-
-                    <label for="pwrd-conf">Confirm Password</label>
-                    <input type="password" id="pwrd-conf">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                        
+                        <label for="phone">Phone:</label>
+                        <input type="number" id="phone">
+                    </div>    
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password">
+                        
+                        <label for="pwrd-conf">Confirm Password:</label>
+                        <input type="password" id="pwrd-conf">
+                    </div>
                 </form>
             </div>
             <div id="account-buttons">
                 <button id="create-account" type="submit">Create Account</button>
-                <p>Already have an account? Log In</p>
+                <p>Already have an account? 
+                    <a href="https://en.wikipedia.org/wiki/Porsche_930" target="_blank">Log In</a>
+                </p>
             </div>
         </div>
     </main>
