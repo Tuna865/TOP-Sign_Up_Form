@@ -3,10 +3,24 @@
     src: url('911porscha/911porschav3.ttf');
 }
 
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+html, body{
+    height: 100%
+}
+
+body{
+    margin: 0;
+}
+
 main{
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: row;
+    align-content: stretch;
 }
 
 #porsche-logo{
@@ -47,6 +61,10 @@ main{
 
 }
 
+label{
+    padding-left: 8px;
+}
+
 #intro-quote{
     height: 33%;
     font-family: Tahoma, sans-serif;
@@ -82,4 +100,5 @@ button{
     border-radius: 7px;
     background-color: red;
     color: white;
+    cursor: pointer;
 }
